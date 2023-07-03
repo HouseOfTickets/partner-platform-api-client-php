@@ -19,8 +19,12 @@ jobs:
           local_tag=$(curl https://api.github.com/repos/EmesaDEV/partner-platform-api-client-php/tags?per_page=1 | jq -r .[].name)
           echo "local_tag=$local_tag"
           echo "local_tag=$local_tag" >> $GITHUB_OUTPUT
+          lowest_tag=$(echo -e "$local_tag\n$remote_tag" | sort -V | head -n1)
+          echo "lowest_tag=$lowest_tag"
+          echo "lowest_tag=$lowest_tag" >> $GITHUB_OUTPUT
       - name: Generate library if versions changed
-        if: steps.compare.outputs.local_tag < steps.compare.outputs.remote_tag
+        if: steps.compare.outputs.remote_tag != steps.compare.outputs.local_tag &&
+          steps.compare.outputs.lowest_tag == steps.compare.outputs.local_tag
         env:
           VERSION: ${{ steps.compare.outputs.remote_tag }}
         run: |
