@@ -67,7 +67,7 @@ define('API_HOST', getenv('API_HOST') ?: 'https://sandbox-market.emesa.org');
 
 $provider = new Stevenmaguire\OAuth2\Client\Provider\Keycloak([
     // Please check Swagger UI or OpenAPI doc.json for updates of the authServerUrl
-    'authServerUrl'         => 'https://sso.emesa.org/auth',
+    'authServerUrl'         => 'https://sso.partners.talpaecommerce.nl',
     'realm'                 => 'partners-sandbox',
     'clientId'              => CLIENT_ID,
     'clientSecret'          => CLIENT_SECRET,
@@ -124,10 +124,16 @@ function createProduct(Emesa\PartnerPlatform\Api\ProductsApi $productsApi, $supp
 
         $nlNlContent = new Emesa\PartnerPlatform\Model\ProductContentDto();
         $nlNlContent->setName('Test product');
-        $nlNlContent->setDescription(
-            '<h4>Description with basic html markup.</h4> Can contain ' .
-            '<ul><li>Lists</li><li>Tables</li><li>and basic text formatting (headings, paragraphs, quotes, etc.)</li></ul>'
-        );
+        $nlNlContent->setWhatIsToBeSold([
+            'Draadloze koptelefoon van Hyundai Electronics (modelnummer: HHA32101)',
+            'Modelnaam: Reliance',
+            'Inclusief oplaadkabel en audio-kabel',
+        ]);
+        $nlNlContent->setProductSpecifications([
+            'Afspeeltijd: 18 uur',
+            'Bluetooth-bereik: 10 m',
+            'Snel opladen: 1 uur luisteren na slechts 10 minuten opladen',
+        ]);
 
         $translations = new Emesa\PartnerPlatform\Model\ProductContentTranslationsDto();
         $translations->setNlNl($nlNlContent);
