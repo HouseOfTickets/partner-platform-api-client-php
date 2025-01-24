@@ -20,7 +20,7 @@ git add .
 # Commits the tracked changes and prepares them to be pushed to a remote repository.
 git commit -m "$release_note"
 
-git pull --set-upstream origin master
+git pull --set-upstream origin main
 
-git push origin master 2>&1 | grep -v 'To https'
+git push origin main 2>&1 | grep -v 'To https'
 

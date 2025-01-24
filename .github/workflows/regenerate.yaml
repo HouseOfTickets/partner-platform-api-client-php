@@ -41,5 +41,5 @@ jobs:
           git log
           git tag "$VERSION"
           git tag -n | true
-          git push origin master | true
+          git push origin main | true
           git push origin --tags | true
