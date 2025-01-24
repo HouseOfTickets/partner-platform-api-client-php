@@ -1,6 +1,6 @@
-# Emesa\PartnerPlatform\ReturnsApi
+# HouseOfTickets\PartnerPlatform\ReturnsApi
 
-All URIs are relative to *https://market.emesa.org/*
+All URIs are relative to *https://market.houseoftickets.nl/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -10,7 +10,7 @@ Method | HTTP request | Description
 [**putReturn**](ReturnsApi.md#putreturn) | **PUT** /supplier-api/v1/orders/{marketOrderId}/returns/{supplierReturnId} | 
 
 # **getReturnAnnouncement**
-> \Emesa\PartnerPlatform\Model\ReturnAnnouncementDto getReturnAnnouncement($market_rma_id)
+> \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto getReturnAnnouncement($market_rma_id)
 
 Get return announcement
 
@@ -19,13 +19,13 @@ Get return announcement
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ReturnsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ReturnAnnouncementDto**](../Model/ReturnAnnouncementDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto**](../Model/ReturnAnnouncementDto.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listReturnAnnouncements**
-> \Emesa\PartnerPlatform\Model\ReturnAnnouncementsList listReturnAnnouncements($since, $limit, $offset)
+> \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementsList listReturnAnnouncements($since, $limit, $offset)
 
 List of returns announcements
 
@@ -73,13 +73,13 @@ List of returns announcements
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ReturnsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ReturnAnnouncementsList**](../Model/ReturnAnnouncementsList.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementsList**](../Model/ReturnAnnouncementsList.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listReturns**
-> \Emesa\PartnerPlatform\Model\ReturnDto[] listReturns($market_order_id)
+> \HouseOfTickets\PartnerPlatform\Model\ReturnDto[] listReturns($market_order_id)
 
 
 
@@ -131,13 +131,13 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ReturnsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -162,7 +162,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ReturnDto[]**](../Model/ReturnDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ReturnDto[]**](../Model/ReturnDto.md)
 
 ### Authorization
 
@@ -185,13 +185,13 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ReturnsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ReturnsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -199,7 +199,7 @@ $apiInstance = new Emesa\PartnerPlatform\Api\ReturnsApi(
 );
 $market_order_id = "market_order_id_example"; // string | 
 $supplier_return_id = "supplier_return_id_example"; // string | 
-$body = new \Emesa\PartnerPlatform\Model\PutReturnRequest(); // \Emesa\PartnerPlatform\Model\PutReturnRequest | Input data
+$body = new \HouseOfTickets\PartnerPlatform\Model\PutReturnRequest(); // \HouseOfTickets\PartnerPlatform\Model\PutReturnRequest | Input data
 
 try {
     $apiInstance->putReturn($market_order_id, $supplier_return_id, $body);
@@ -215,7 +215,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **market_order_id** | **string**|  |
  **supplier_return_id** | **string**|  |
- **body** | [**\Emesa\PartnerPlatform\Model\PutReturnRequest**](../Model/PutReturnRequest.md)| Input data | [optional]
+ **body** | [**\HouseOfTickets\PartnerPlatform\Model\PutReturnRequest**](../Model/PutReturnRequest.md)| Input data | [optional]
 
 ### Return type
 

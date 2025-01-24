@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ReturnDto Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,7 +60,7 @@ class ReturnDto implements ModelInterface, ArrayAccess
 'reason' => 'string',
 'merchant_comment' => 'string',
 'customer_comment' => 'string',
-'lines' => '\Emesa\PartnerPlatform\Model\ReturnLineDto[]'    ];
+'lines' => '\HouseOfTickets\PartnerPlatform\Model\ReturnLineDto[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -370,7 +370,7 @@ self::REASON_RETURNED_BY_CARRIER,        ];
     /**
      * Gets lines
      *
-     * @return \Emesa\PartnerPlatform\Model\ReturnLineDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ReturnLineDto[]
      */
     public function getLines()
     {
@@ -380,7 +380,7 @@ self::REASON_RETURNED_BY_CARRIER,        ];
     /**
      * Sets lines
      *
-     * @param \Emesa\PartnerPlatform\Model\ReturnLineDto[] $lines lines
+     * @param \HouseOfTickets\PartnerPlatform\Model\ReturnLineDto[] $lines lines
      *
      * @return $this
      */

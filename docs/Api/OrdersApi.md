@@ -1,6 +1,6 @@
-# Emesa\PartnerPlatform\OrdersApi
+# HouseOfTickets\PartnerPlatform\OrdersApi
 
-All URIs are relative to *https://market.emesa.org/*
+All URIs are relative to *https://market.houseoftickets.nl/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -9,7 +9,7 @@ Method | HTTP request | Description
 [**orderConfirm**](OrdersApi.md#orderconfirm) | **PUT** /supplier-api/v1/orders/{marketOrderId}/state/confirmed | Confirm order received
 
 # **getOrder**
-> \Emesa\PartnerPlatform\Model\OrderDto getOrder($market_order_id)
+> \HouseOfTickets\PartnerPlatform\Model\OrderDto getOrder($market_order_id)
 
 Get order
 
@@ -20,13 +20,13 @@ Retrieve a single order by a Market Order ID.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\OrdersApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -51,7 +51,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\OrderDto**](../Model/OrderDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\OrderDto**](../Model/OrderDto.md)
 
 ### Authorization
 
@@ -65,7 +65,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listOrders**
-> \Emesa\PartnerPlatform\Model\OrderList listOrders($limit, $offset, $state)
+> \HouseOfTickets\PartnerPlatform\Model\OrderList listOrders($limit, $offset, $state)
 
 List orders
 
@@ -76,13 +76,13 @@ By default all orders are listed, but you can also list confirmed or new orders 
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\OrdersApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -111,7 +111,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\OrderList**](../Model/OrderList.md)
+[**\HouseOfTickets\PartnerPlatform\Model\OrderList**](../Model/OrderList.md)
 
 ### Authorization
 
@@ -136,13 +136,13 @@ Move the order to the confirmed state. This will remove it from the list of orde
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\OrdersApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\OrdersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

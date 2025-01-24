@@ -1,6 +1,6 @@
-# Emesa\PartnerPlatform\DictionaryApi
+# HouseOfTickets\PartnerPlatform\DictionaryApi
 
-All URIs are relative to *https://market.emesa.org/*
+All URIs are relative to *https://market.houseoftickets.nl/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**listShippingClasses**](DictionaryApi.md#listshippingclasses) | **GET** /supplier-api/v1/shipping-classes | 
 
 # **listCategories**
-> \Emesa\PartnerPlatform\Model\CategoryList listCategories($limit, $offset)
+> \HouseOfTickets\PartnerPlatform\Model\CategoryList listCategories($limit, $offset)
 
 
 
@@ -17,13 +17,13 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\DictionaryApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\DictionaryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\CategoryList**](../Model/CategoryList.md)
+[**\HouseOfTickets\PartnerPlatform\Model\CategoryList**](../Model/CategoryList.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listShippingClasses**
-> \Emesa\PartnerPlatform\Model\ShippingClassDto[] listShippingClasses()
+> \HouseOfTickets\PartnerPlatform\Model\ShippingClassDto[] listShippingClasses()
 
 
 
@@ -73,13 +73,13 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\DictionaryApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\DictionaryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -100,7 +100,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ShippingClassDto[]**](../Model/ShippingClassDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ShippingClassDto[]**](../Model/ShippingClassDto.md)
 
 ### Authorization
 

@@ -1,6 +1,6 @@
-# Emesa\PartnerPlatform\ShipmentsApi
+# HouseOfTickets\PartnerPlatform\ShipmentsApi
 
-All URIs are relative to *https://market.emesa.org/*
+All URIs are relative to *https://market.houseoftickets.nl/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -8,7 +8,7 @@ Method | HTTP request | Description
 [**putOrderShipment**](ShipmentsApi.md#putordershipment) | **PUT** /supplier-api/v1/orders/{marketOrderId}/shipments/{supplierShipmentId} | 
 
 # **listOrderShipments**
-> \Emesa\PartnerPlatform\Model\ShipmentDto[] listOrderShipments($market_order_id)
+> \HouseOfTickets\PartnerPlatform\Model\ShipmentDto[] listOrderShipments($market_order_id)
 
 
 
@@ -17,13 +17,13 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ShipmentsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -48,7 +48,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ShipmentDto[]**](../Model/ShipmentDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ShipmentDto[]**](../Model/ShipmentDto.md)
 
 ### Authorization
 
@@ -71,13 +71,13 @@ Name | Type | Description  | Notes
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ShipmentsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ShipmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -85,7 +85,7 @@ $apiInstance = new Emesa\PartnerPlatform\Api\ShipmentsApi(
 );
 $market_order_id = "market_order_id_example"; // string | 
 $supplier_shipment_id = "supplier_shipment_id_example"; // string | 
-$body = new \Emesa\PartnerPlatform\Model\PutShipmentRequest(); // \Emesa\PartnerPlatform\Model\PutShipmentRequest | Input data
+$body = new \HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest(); // \HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest | Input data
 
 try {
     $apiInstance->putOrderShipment($market_order_id, $supplier_shipment_id, $body);
@@ -101,7 +101,7 @@ Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **market_order_id** | **string**|  |
  **supplier_shipment_id** | **string**|  |
- **body** | [**\Emesa\PartnerPlatform\Model\PutShipmentRequest**](../Model/PutShipmentRequest.md)| Input data | [optional]
+ **body** | [**\HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest**](../Model/PutShipmentRequest.md)| Input data | [optional]
 
 ### Return type
 

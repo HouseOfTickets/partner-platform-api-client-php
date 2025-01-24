@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,14 +25,14 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform;
+namespace HouseOfTickets\PartnerPlatform;
 
 /**
  * Configuration Class Doc Comment
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -80,14 +80,14 @@ class Configuration
      *
      * @var string
      */
-    protected $host = 'https://market.emesa.org/';
+    protected $host = 'https://market.houseoftickets.nl/';
 
     /**
      * User agent of the HTTP request, set to "PHP-Swagger" by default
      *
      * @var string
      */
-    protected $userAgent = 'Emesa-Supplier-Api-Client/PHP/v1.1.15';
+    protected $userAgent = 'HouseOfTickets-Supplier-Api-Client/PHP/v1.1.15';
 
     /**
      * Debug switch (default set to false)
@@ -392,7 +392,7 @@ class Configuration
      */
     public static function toDebugReport()
     {
-        $report  = 'PHP SDK (Emesa\PartnerPlatform) Debug Report:' . PHP_EOL;
+        $report  = 'PHP SDK (HouseOfTickets\PartnerPlatform) Debug Report:' . PHP_EOL;
         $report .= '    OS: ' . php_uname() . PHP_EOL;
         $report .= '    PHP Version: ' . PHP_VERSION . PHP_EOL;
         $report .= '    OpenAPI Spec Version: 1.1.15' . PHP_EOL;

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Api;
+namespace HouseOfTickets\PartnerPlatform\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emesa\PartnerPlatform\ApiException;
-use Emesa\PartnerPlatform\Configuration;
-use Emesa\PartnerPlatform\HeaderSelector;
-use Emesa\PartnerPlatform\ObjectSerializer;
+use HouseOfTickets\PartnerPlatform\ApiException;
+use HouseOfTickets\PartnerPlatform\Configuration;
+use HouseOfTickets\PartnerPlatform\HeaderSelector;
+use HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * OrdersApi Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class OrdersApi
      *
      * @param  string $market_order_id market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\OrderDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\OrderDto
      */
     public function getOrder($market_order_id)
     {
@@ -110,13 +110,13 @@ class OrdersApi
      *
      * @param  string $market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\OrderDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\OrderDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOrderWithHttpInfo($market_order_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\OrderDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\OrderDto';
         $request = $this->getOrderRequest($market_order_id);
 
         try {
@@ -168,7 +168,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\OrderDto',
+                        '\HouseOfTickets\PartnerPlatform\Model\OrderDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class OrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class OrdersApi
      */
     public function getOrderAsyncWithHttpInfo($market_order_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\OrderDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\OrderDto';
         $request = $this->getOrderRequest($market_order_id);
 
         return $this->client
@@ -373,9 +373,9 @@ class OrdersApi
      * @param  int $offset Skip first N items (optional, default to 0)
      * @param  string $state state (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\OrderList
+     * @return \HouseOfTickets\PartnerPlatform\Model\OrderList
      */
     public function listOrders($limit = '100', $offset = '0', $state = null)
     {
@@ -392,13 +392,13 @@ class OrdersApi
      * @param  int $offset Skip first N items (optional, default to 0)
      * @param  string $state (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\OrderList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\OrderList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listOrdersWithHttpInfo($limit = '100', $offset = '0', $state = null)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\OrderList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\OrderList';
         $request = $this->listOrdersRequest($limit, $offset, $state);
 
         try {
@@ -450,7 +450,7 @@ class OrdersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\OrderList',
+                        '\HouseOfTickets\PartnerPlatform\Model\OrderList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -458,7 +458,7 @@ class OrdersApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class OrdersApi
      */
     public function listOrdersAsyncWithHttpInfo($limit = '100', $offset = '0', $state = null)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\OrderList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\OrderList';
         $request = $this->listOrdersRequest($limit, $offset, $state);
 
         return $this->client
@@ -657,7 +657,7 @@ class OrdersApi
      *
      * @param  string $market_order_id market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -673,7 +673,7 @@ class OrdersApi
      *
      * @param  string $market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -717,7 +717,7 @@ class OrdersApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

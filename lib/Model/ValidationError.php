@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+namespace HouseOfTickets\PartnerPlatform\Model;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ValidationError Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class ValidationError extends Error
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'violations' => '\Emesa\PartnerPlatform\Model\ValidationField[]'    ];
+        'violations' => '\HouseOfTickets\PartnerPlatform\Model\ValidationField[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -196,7 +196,7 @@ class ValidationError extends Error
     /**
      * Gets violations
      *
-     * @return \Emesa\PartnerPlatform\Model\ValidationField[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ValidationField[]
      */
     public function getViolations()
     {
@@ -206,7 +206,7 @@ class ValidationError extends Error
     /**
      * Sets violations
      *
-     * @param \Emesa\PartnerPlatform\Model\ValidationField[] $violations List of violations
+     * @param \HouseOfTickets\PartnerPlatform\Model\ValidationField[] $violations List of violations
      *
      * @return $this
      */

@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Api;
+namespace HouseOfTickets\PartnerPlatform\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emesa\PartnerPlatform\ApiException;
-use Emesa\PartnerPlatform\Configuration;
-use Emesa\PartnerPlatform\HeaderSelector;
-use Emesa\PartnerPlatform\ObjectSerializer;
+use HouseOfTickets\PartnerPlatform\ApiException;
+use HouseOfTickets\PartnerPlatform\Configuration;
+use HouseOfTickets\PartnerPlatform\HeaderSelector;
+use HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * WebhooksApi Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,7 +91,7 @@ class WebhooksApi
      *
      * @param  string $supplier_webhook_id supplier_webhook_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -105,7 +105,7 @@ class WebhooksApi
      *
      * @param  string $supplier_webhook_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -149,7 +149,7 @@ class WebhooksApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -328,9 +328,9 @@ class WebhooksApi
      *
      * @param  string $supplier_webhook_id supplier_webhook_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\WebhookDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\WebhookDto
      */
     public function getWebhook($supplier_webhook_id)
     {
@@ -343,13 +343,13 @@ class WebhooksApi
      *
      * @param  string $supplier_webhook_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\WebhookDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\WebhookDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getWebhookWithHttpInfo($supplier_webhook_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\WebhookDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\WebhookDto';
         $request = $this->getWebhookRequest($supplier_webhook_id);
 
         try {
@@ -401,7 +401,7 @@ class WebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\WebhookDto',
+                        '\HouseOfTickets\PartnerPlatform\Model\WebhookDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -409,7 +409,7 @@ class WebhooksApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -451,7 +451,7 @@ class WebhooksApi
      */
     public function getWebhookAsyncWithHttpInfo($supplier_webhook_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\WebhookDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\WebhookDto';
         $request = $this->getWebhookRequest($supplier_webhook_id);
 
         return $this->client
@@ -603,9 +603,9 @@ class WebhooksApi
      * @param  int $limit Maximum number of entities to return (optional, default to 100)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\WebhookList
+     * @return \HouseOfTickets\PartnerPlatform\Model\WebhookList
      */
     public function listWebhooks($limit = '100', $offset = '0')
     {
@@ -619,13 +619,13 @@ class WebhooksApi
      * @param  int $limit Maximum number of entities to return (optional, default to 100)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\WebhookList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\WebhookList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listWebhooksWithHttpInfo($limit = '100', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\WebhookList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\WebhookList';
         $request = $this->listWebhooksRequest($limit, $offset);
 
         try {
@@ -677,7 +677,7 @@ class WebhooksApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\WebhookList',
+                        '\HouseOfTickets\PartnerPlatform\Model\WebhookList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -685,7 +685,7 @@ class WebhooksApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -729,7 +729,7 @@ class WebhooksApi
      */
     public function listWebhooksAsyncWithHttpInfo($limit = '100', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\WebhookList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\WebhookList';
         $request = $this->listWebhooksRequest($limit, $offset);
 
         return $this->client
@@ -874,9 +874,9 @@ class WebhooksApi
      * Operation putWebhook
      *
      * @param  string $supplier_webhook_id supplier_webhook_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -889,9 +889,9 @@ class WebhooksApi
      * Operation putWebhookWithHttpInfo
      *
      * @param  string $supplier_webhook_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -935,7 +935,7 @@ class WebhooksApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -951,7 +951,7 @@ class WebhooksApi
      * 
      *
      * @param  string $supplier_webhook_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -972,7 +972,7 @@ class WebhooksApi
      * 
      *
      * @param  string $supplier_webhook_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1009,7 +1009,7 @@ class WebhooksApi
      * Create request for operation 'putWebhook'
      *
      * @param  string $supplier_webhook_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutWebhookRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1120,7 +1120,7 @@ class WebhooksApi
      *
      * @param  string $supplier_webhook_id supplier_webhook_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1134,7 +1134,7 @@ class WebhooksApi
      *
      * @param  string $supplier_webhook_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1178,7 +1178,7 @@ class WebhooksApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);

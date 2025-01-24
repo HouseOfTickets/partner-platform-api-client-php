@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ProductDto Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -63,7 +63,7 @@ class ProductDto implements ModelInterface, ArrayAccess
 'retail_price_in_cents' => 'int',
 'main_image_url' => 'string',
 'brand_logo_image_url' => 'string',
-'translations' => '\Emesa\PartnerPlatform\Model\ProductContentTranslationsDto',
+'translations' => '\HouseOfTickets\PartnerPlatform\Model\ProductContentTranslationsDto',
 'extra_image_urls' => 'string[]'    ];
 
     /**
@@ -430,7 +430,7 @@ class ProductDto implements ModelInterface, ArrayAccess
     /**
      * Gets translations
      *
-     * @return \Emesa\PartnerPlatform\Model\ProductContentTranslationsDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\ProductContentTranslationsDto
      */
     public function getTranslations()
     {
@@ -440,7 +440,7 @@ class ProductDto implements ModelInterface, ArrayAccess
     /**
      * Sets translations
      *
-     * @param \Emesa\PartnerPlatform\Model\ProductContentTranslationsDto $translations translations
+     * @param \HouseOfTickets\PartnerPlatform\Model\ProductContentTranslationsDto $translations translations
      *
      * @return $this
      */

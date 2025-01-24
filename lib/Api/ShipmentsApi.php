@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Api;
+namespace HouseOfTickets\PartnerPlatform\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emesa\PartnerPlatform\ApiException;
-use Emesa\PartnerPlatform\Configuration;
-use Emesa\PartnerPlatform\HeaderSelector;
-use Emesa\PartnerPlatform\ObjectSerializer;
+use HouseOfTickets\PartnerPlatform\ApiException;
+use HouseOfTickets\PartnerPlatform\Configuration;
+use HouseOfTickets\PartnerPlatform\HeaderSelector;
+use HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ShipmentsApi Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -91,9 +91,9 @@ class ShipmentsApi
      *
      * @param  string $market_order_id market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ShipmentDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ShipmentDto[]
      */
     public function listOrderShipments($market_order_id)
     {
@@ -106,13 +106,13 @@ class ShipmentsApi
      *
      * @param  string $market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ShipmentDto[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ShipmentDto[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listOrderShipmentsWithHttpInfo($market_order_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ShipmentDto[]';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ShipmentDto[]';
         $request = $this->listOrderShipmentsRequest($market_order_id);
 
         try {
@@ -164,7 +164,7 @@ class ShipmentsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ShipmentDto[]',
+                        '\HouseOfTickets\PartnerPlatform\Model\ShipmentDto[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -172,7 +172,7 @@ class ShipmentsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -214,7 +214,7 @@ class ShipmentsApi
      */
     public function listOrderShipmentsAsyncWithHttpInfo($market_order_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ShipmentDto[]';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ShipmentDto[]';
         $request = $this->listOrderShipmentsRequest($market_order_id);
 
         return $this->client
@@ -365,9 +365,9 @@ class ShipmentsApi
      *
      * @param  string $market_order_id market_order_id (required)
      * @param  string $supplier_shipment_id supplier_shipment_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -381,9 +381,9 @@ class ShipmentsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_shipment_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -427,7 +427,7 @@ class ShipmentsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -435,7 +435,7 @@ class ShipmentsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -443,7 +443,7 @@ class ShipmentsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -451,7 +451,7 @@ class ShipmentsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -468,7 +468,7 @@ class ShipmentsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_shipment_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -490,7 +490,7 @@ class ShipmentsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_shipment_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -528,7 +528,7 @@ class ShipmentsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_shipment_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutShipmentRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

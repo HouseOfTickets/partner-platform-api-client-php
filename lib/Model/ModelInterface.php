@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform\Model
+ * @package  HouseOfTickets\PartnerPlatform\Model
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package Emesa\PartnerPlatform\Model
+ * @package HouseOfTickets\PartnerPlatform\Model
  * @author  Swagger Codegen team
  */
 interface ModelInterface

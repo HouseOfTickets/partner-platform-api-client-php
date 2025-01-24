@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ProductOfferResponseDto Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,8 +56,8 @@ class ProductOfferResponseDto implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'offer_state' => '\Emesa\PartnerPlatform\Model\OfferStatusExternal',
-'meta_data' => '\Emesa\PartnerPlatform\Model\SupplierProductMetaDataDto',
+        'offer_state' => '\HouseOfTickets\PartnerPlatform\Model\OfferStatusExternal',
+'meta_data' => '\HouseOfTickets\PartnerPlatform\Model\SupplierProductMetaDataDto',
 'target_price_in_cents' => 'int',
 'market_shipping_class_id' => 'string',
 'target_country_codes' => 'string[]',
@@ -291,7 +291,7 @@ self::TARGET_COUNTRY_CODES_NL,        ];
     /**
      * Gets offer_state
      *
-     * @return \Emesa\PartnerPlatform\Model\OfferStatusExternal
+     * @return \HouseOfTickets\PartnerPlatform\Model\OfferStatusExternal
      */
     public function getOfferState()
     {
@@ -301,7 +301,7 @@ self::TARGET_COUNTRY_CODES_NL,        ];
     /**
      * Sets offer_state
      *
-     * @param \Emesa\PartnerPlatform\Model\OfferStatusExternal $offer_state offer_state
+     * @param \HouseOfTickets\PartnerPlatform\Model\OfferStatusExternal $offer_state offer_state
      *
      * @return $this
      */
@@ -315,7 +315,7 @@ self::TARGET_COUNTRY_CODES_NL,        ];
     /**
      * Gets meta_data
      *
-     * @return \Emesa\PartnerPlatform\Model\SupplierProductMetaDataDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\SupplierProductMetaDataDto
      */
     public function getMetaData()
     {
@@ -325,7 +325,7 @@ self::TARGET_COUNTRY_CODES_NL,        ];
     /**
      * Sets meta_data
      *
-     * @param \Emesa\PartnerPlatform\Model\SupplierProductMetaDataDto $meta_data meta_data
+     * @param \HouseOfTickets\PartnerPlatform\Model\SupplierProductMetaDataDto $meta_data meta_data
      *
      * @return $this
      */

@@ -1,6 +1,6 @@
-# Emesa\PartnerPlatform\ProductsApi
+# HouseOfTickets\PartnerPlatform\ProductsApi
 
-All URIs are relative to *https://market.emesa.org/*
+All URIs are relative to *https://market.houseoftickets.nl/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 [**stopOffer**](ProductsApi.md#stopoffer) | **POST** /supplier-api/v1/products/{supplierProductId}/offer/stop | Stop current offer for a product
 
 # **getOffer**
-> \Emesa\PartnerPlatform\Model\ProductOfferResponseDto getOffer($supplier_product_id)
+> \HouseOfTickets\PartnerPlatform\Model\ProductOfferResponseDto getOffer($supplier_product_id)
 
 Get current offer for a product
 
@@ -21,13 +21,13 @@ Get current offer for a product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ProductsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -52,7 +52,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ProductOfferResponseDto**](../Model/ProductOfferResponseDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ProductOfferResponseDto**](../Model/ProductOfferResponseDto.md)
 
 ### Authorization
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **getProduct**
-> \Emesa\PartnerPlatform\Model\ProductDto getProduct($supplier_product_id)
+> \HouseOfTickets\PartnerPlatform\Model\ProductDto getProduct($supplier_product_id)
 
 Get product
 
@@ -77,13 +77,13 @@ Get previously created product.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ProductsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -108,7 +108,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ProductDto**](../Model/ProductDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ProductDto**](../Model/ProductDto.md)
 
 ### Authorization
 
@@ -122,7 +122,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **listProducts**
-> \Emesa\PartnerPlatform\Model\ProductList listProducts($limit, $offset)
+> \HouseOfTickets\PartnerPlatform\Model\ProductList listProducts($limit, $offset)
 
 List products
 
@@ -133,13 +133,13 @@ List previously created products.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ProductsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\ProductList**](../Model/ProductList.md)
+[**\HouseOfTickets\PartnerPlatform\Model\ProductList**](../Model/ProductList.md)
 
 ### Authorization
 
@@ -191,20 +191,20 @@ Create or update an offer on a product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ProductsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $supplier_product_id = "supplier_product_id_example"; // string | 
-$body = new \Emesa\PartnerPlatform\Model\ProductOfferRequest(); // \Emesa\PartnerPlatform\Model\ProductOfferRequest | Input data
+$body = new \HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest(); // \HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest | Input data
 
 try {
     $apiInstance->putOffer($supplier_product_id, $body);
@@ -219,7 +219,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **supplier_product_id** | **string**|  |
- **body** | [**\Emesa\PartnerPlatform\Model\ProductOfferRequest**](../Model/ProductOfferRequest.md)| Input data | [optional]
+ **body** | [**\HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest**](../Model/ProductOfferRequest.md)| Input data | [optional]
 
 ### Return type
 
@@ -248,20 +248,20 @@ If a product with the same Supplier Product ID already exists, it is updated.
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ProductsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $supplier_product_id = "supplier_product_id_example"; // string | 
-$body = new \Emesa\PartnerPlatform\Model\PutProductRequest(); // \Emesa\PartnerPlatform\Model\PutProductRequest | Input data
+$body = new \HouseOfTickets\PartnerPlatform\Model\PutProductRequest(); // \HouseOfTickets\PartnerPlatform\Model\PutProductRequest | Input data
 
 try {
     $apiInstance->putProduct($supplier_product_id, $body);
@@ -276,7 +276,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **supplier_product_id** | **string**|  |
- **body** | [**\Emesa\PartnerPlatform\Model\PutProductRequest**](../Model/PutProductRequest.md)| Input data | [optional]
+ **body** | [**\HouseOfTickets\PartnerPlatform\Model\PutProductRequest**](../Model/PutProductRequest.md)| Input data | [optional]
 
 ### Return type
 
@@ -303,20 +303,20 @@ Stop current offer for a product
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\ProductsApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\ProductsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
     $config
 );
 $supplier_product_id = "supplier_product_id_example"; // string | 
-$body = new \Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest(); // \Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest | Input data
+$body = new \HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest(); // \HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest | Input data
 
 try {
     $apiInstance->stopOffer($supplier_product_id, $body);
@@ -331,7 +331,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **supplier_product_id** | **string**|  |
- **body** | [**\Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest**](../Model/StopSupplierProductOfferRequest.md)| Input data | [optional]
+ **body** | [**\HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest**](../Model/StopSupplierProductOfferRequest.md)| Input data | [optional]
 
 ### Return type
 

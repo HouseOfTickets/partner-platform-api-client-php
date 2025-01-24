@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Api;
+namespace HouseOfTickets\PartnerPlatform\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emesa\PartnerPlatform\ApiException;
-use Emesa\PartnerPlatform\Configuration;
-use Emesa\PartnerPlatform\HeaderSelector;
-use Emesa\PartnerPlatform\ObjectSerializer;
+use HouseOfTickets\PartnerPlatform\ApiException;
+use HouseOfTickets\PartnerPlatform\Configuration;
+use HouseOfTickets\PartnerPlatform\HeaderSelector;
+use HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ReturnsApi Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class ReturnsApi
      *
      * @param  string $market_rma_id market_rma_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ReturnAnnouncementDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto
      */
     public function getReturnAnnouncement($market_rma_id)
     {
@@ -110,13 +110,13 @@ class ReturnsApi
      *
      * @param  string $market_rma_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ReturnAnnouncementDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getReturnAnnouncementWithHttpInfo($market_rma_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ReturnAnnouncementDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto';
         $request = $this->getReturnAnnouncementRequest($market_rma_id);
 
         try {
@@ -168,7 +168,7 @@ class ReturnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ReturnAnnouncementDto',
+                        '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class ReturnsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class ReturnsApi
      */
     public function getReturnAnnouncementAsyncWithHttpInfo($market_rma_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ReturnAnnouncementDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto';
         $request = $this->getReturnAnnouncementRequest($market_rma_id);
 
         return $this->client
@@ -373,9 +373,9 @@ class ReturnsApi
      * @param  int $limit Maximum number of entities to return (optional, default to 100)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ReturnAnnouncementsList
+     * @return \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementsList
      */
     public function listReturnAnnouncements($since = null, $limit = '100', $offset = '0')
     {
@@ -392,13 +392,13 @@ class ReturnsApi
      * @param  int $limit Maximum number of entities to return (optional, default to 100)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ReturnAnnouncementsList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementsList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listReturnAnnouncementsWithHttpInfo($since = null, $limit = '100', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ReturnAnnouncementsList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementsList';
         $request = $this->listReturnAnnouncementsRequest($since, $limit, $offset);
 
         try {
@@ -450,7 +450,7 @@ class ReturnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ReturnAnnouncementsList',
+                        '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementsList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -458,7 +458,7 @@ class ReturnsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -504,7 +504,7 @@ class ReturnsApi
      */
     public function listReturnAnnouncementsAsyncWithHttpInfo($since = null, $limit = '100', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ReturnAnnouncementsList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementsList';
         $request = $this->listReturnAnnouncementsRequest($since, $limit, $offset);
 
         return $this->client
@@ -655,9 +655,9 @@ class ReturnsApi
      *
      * @param  string $market_order_id market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ReturnDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ReturnDto[]
      */
     public function listReturns($market_order_id)
     {
@@ -670,13 +670,13 @@ class ReturnsApi
      *
      * @param  string $market_order_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ReturnDto[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ReturnDto[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listReturnsWithHttpInfo($market_order_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ReturnDto[]';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ReturnDto[]';
         $request = $this->listReturnsRequest($market_order_id);
 
         try {
@@ -728,7 +728,7 @@ class ReturnsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -736,7 +736,7 @@ class ReturnsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ReturnDto[]',
+                        '\HouseOfTickets\PartnerPlatform\Model\ReturnDto[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -778,7 +778,7 @@ class ReturnsApi
      */
     public function listReturnsAsyncWithHttpInfo($market_order_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ReturnDto[]';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ReturnDto[]';
         $request = $this->listReturnsRequest($market_order_id);
 
         return $this->client
@@ -929,9 +929,9 @@ class ReturnsApi
      *
      * @param  string $market_order_id market_order_id (required)
      * @param  string $supplier_return_id supplier_return_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -945,9 +945,9 @@ class ReturnsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_return_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -991,7 +991,7 @@ class ReturnsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -999,7 +999,7 @@ class ReturnsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1007,7 +1007,7 @@ class ReturnsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1015,7 +1015,7 @@ class ReturnsApi
                 case 409:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1032,7 +1032,7 @@ class ReturnsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_return_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1054,7 +1054,7 @@ class ReturnsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_return_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1092,7 +1092,7 @@ class ReturnsApi
      *
      * @param  string $market_order_id (required)
      * @param  string $supplier_return_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutReturnRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
