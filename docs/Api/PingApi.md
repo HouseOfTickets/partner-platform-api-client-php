@@ -1,13 +1,13 @@
-# Emesa\PartnerPlatform\PingApi
+# HouseOfTickets\PartnerPlatform\PingApi
 
-All URIs are relative to *https://market.emesa.org/*
+All URIs are relative to *https://market.houseoftickets.nl/*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
 [**ping**](PingApi.md#ping) | **GET** /supplier-api/v1/ping | 
 
 # **ping**
-> \Emesa\PartnerPlatform\Model\PingResponseDto ping()
+> \HouseOfTickets\PartnerPlatform\Model\PingResponseDto ping()
 
 
 
@@ -16,13 +16,13 @@ Method | HTTP request | Description
 <?php
 require_once(__DIR__ . '/vendor/autoload.php');
     // Configure HTTP bearer authorization: BearerToken
-    $config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+    $config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setAccessToken('YOUR_ACCESS_TOKEN');
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
 
-$apiInstance = new Emesa\PartnerPlatform\Api\PingApi(
+$apiInstance = new HouseOfTickets\PartnerPlatform\Api\PingApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),
@@ -43,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Emesa\PartnerPlatform\Model\PingResponseDto**](../Model/PingResponseDto.md)
+[**\HouseOfTickets\PartnerPlatform\Model\PingResponseDto**](../Model/PingResponseDto.md)
 
 ### Authorization
 

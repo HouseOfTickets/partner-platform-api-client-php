@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Api;
+namespace HouseOfTickets\PartnerPlatform\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emesa\PartnerPlatform\ApiException;
-use Emesa\PartnerPlatform\Configuration;
-use Emesa\PartnerPlatform\HeaderSelector;
-use Emesa\PartnerPlatform\ObjectSerializer;
+use HouseOfTickets\PartnerPlatform\ApiException;
+use HouseOfTickets\PartnerPlatform\Configuration;
+use HouseOfTickets\PartnerPlatform\HeaderSelector;
+use HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ProductsApi Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -93,9 +93,9 @@ class ProductsApi
      *
      * @param  string $supplier_product_id supplier_product_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ProductOfferResponseDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\ProductOfferResponseDto
      */
     public function getOffer($supplier_product_id)
     {
@@ -110,13 +110,13 @@ class ProductsApi
      *
      * @param  string $supplier_product_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ProductOfferResponseDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ProductOfferResponseDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getOfferWithHttpInfo($supplier_product_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ProductOfferResponseDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ProductOfferResponseDto';
         $request = $this->getOfferRequest($supplier_product_id);
 
         try {
@@ -168,7 +168,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ProductOfferResponseDto',
+                        '\HouseOfTickets\PartnerPlatform\Model\ProductOfferResponseDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -176,7 +176,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class ProductsApi
      */
     public function getOfferAsyncWithHttpInfo($supplier_product_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ProductOfferResponseDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ProductOfferResponseDto';
         $request = $this->getOfferRequest($supplier_product_id);
 
         return $this->client
@@ -371,9 +371,9 @@ class ProductsApi
      *
      * @param  string $supplier_product_id supplier_product_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ProductDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\ProductDto
      */
     public function getProduct($supplier_product_id)
     {
@@ -388,13 +388,13 @@ class ProductsApi
      *
      * @param  string $supplier_product_id (required)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ProductDto, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ProductDto, HTTP status code, HTTP response headers (array of strings)
      */
     public function getProductWithHttpInfo($supplier_product_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ProductDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ProductDto';
         $request = $this->getProductRequest($supplier_product_id);
 
         try {
@@ -446,7 +446,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ProductDto',
+                        '\HouseOfTickets\PartnerPlatform\Model\ProductDto',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -454,7 +454,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -496,7 +496,7 @@ class ProductsApi
      */
     public function getProductAsyncWithHttpInfo($supplier_product_id)
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ProductDto';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ProductDto';
         $request = $this->getProductRequest($supplier_product_id);
 
         return $this->client
@@ -650,9 +650,9 @@ class ProductsApi
      * @param  int $limit Maximum number of entities to return (optional, default to 1000)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ProductList
+     * @return \HouseOfTickets\PartnerPlatform\Model\ProductList
      */
     public function listProducts($limit = '1000', $offset = '0')
     {
@@ -668,13 +668,13 @@ class ProductsApi
      * @param  int $limit Maximum number of entities to return (optional, default to 1000)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ProductList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ProductList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listProductsWithHttpInfo($limit = '1000', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ProductList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ProductList';
         $request = $this->listProductsRequest($limit, $offset);
 
         try {
@@ -726,7 +726,7 @@ class ProductsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ProductList',
+                        '\HouseOfTickets\PartnerPlatform\Model\ProductList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -734,7 +734,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -778,7 +778,7 @@ class ProductsApi
      */
     public function listProductsAsyncWithHttpInfo($limit = '1000', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ProductList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ProductList';
         $request = $this->listProductsRequest($limit, $offset);
 
         return $this->client
@@ -925,9 +925,9 @@ class ProductsApi
      * Create or update an offer on a product
      *
      * @param  string $supplier_product_id supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -942,9 +942,9 @@ class ProductsApi
      * Create or update an offer on a product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -988,7 +988,7 @@ class ProductsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -996,7 +996,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1004,7 +1004,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1020,7 +1020,7 @@ class ProductsApi
      * Create or update an offer on a product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1041,7 +1041,7 @@ class ProductsApi
      * Create or update an offer on a product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1078,7 +1078,7 @@ class ProductsApi
      * Create request for operation 'putOffer'
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\ProductOfferRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1190,9 +1190,9 @@ class ProductsApi
      * Create or update product
      *
      * @param  string $supplier_product_id supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1207,9 +1207,9 @@ class ProductsApi
      * Create or update product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1253,7 +1253,7 @@ class ProductsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1261,7 +1261,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1277,7 +1277,7 @@ class ProductsApi
      * Create or update product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1298,7 +1298,7 @@ class ProductsApi
      * Create or update product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1335,7 +1335,7 @@ class ProductsApi
      * Create request for operation 'putProduct'
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\PutProductRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
@@ -1447,9 +1447,9 @@ class ProductsApi
      * Stop current offer for a product
      *
      * @param  string $supplier_product_id supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -1464,9 +1464,9 @@ class ProductsApi
      * Stop current offer for a product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -1510,7 +1510,7 @@ class ProductsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1518,7 +1518,7 @@ class ProductsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\Error',
+                        '\HouseOfTickets\PartnerPlatform\Model\Error',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1526,7 +1526,7 @@ class ProductsApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1542,7 +1542,7 @@ class ProductsApi
      * Stop current offer for a product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1563,7 +1563,7 @@ class ProductsApi
      * Stop current offer for a product
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
@@ -1600,7 +1600,7 @@ class ProductsApi
      * Create request for operation 'stopOffer'
      *
      * @param  string $supplier_product_id (required)
-     * @param  \Emesa\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
+     * @param  \HouseOfTickets\PartnerPlatform\Model\StopSupplierProductOfferRequest $body Input data (optional)
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request

@@ -21,11 +21,11 @@ To install the bindings via [Composer](http://getcomposer.org/), add the followi
   "repositories": [
     {
       "type": "git",
-      "url": "https://github.com/EmesaDEV/partner-platform-api-client-php.git"
+      "url": "https://github.com/HouseOfTickets/partner-platform-api-client-php.git"
     }
   ],
   "require": {
-    "emesa-dev/partner-platform-api-client-php": "^1.1.0"
+    "house-of-tickets/partner-platform-api-client-php": "^1.1.0"
   }
 }
 ```
@@ -76,24 +76,24 @@ $accessToken = $provider->getAccessToken('client_credentials');
 $token = $accessToken->getToken();
 
 // Configure OAuth2 access token for authorization: ClientCredentials
-$config = Emesa\PartnerPlatform\Configuration::getDefaultConfiguration()
+$config = HouseOfTickets\PartnerPlatform\Configuration::getDefaultConfiguration()
     ->setHost(API_HOST)
     ->setAccessToken($token);
 
-$dictionaryApi = new Emesa\PartnerPlatform\Api\DictionaryApi(
+$dictionaryApi = new HouseOfTickets\PartnerPlatform\Api\DictionaryApi(
     // If you want to use a custom http client, you can pass an instance of `GuzzleHttp\ClientInterface` to override
     // the default one. This is optional, a default instance of `GuzzleHttp\Client` is created by default.
     new GuzzleHttp\Client(),
     $config
 );
 
-$productsApi = new Emesa\PartnerPlatform\Api\ProductsApi(
+$productsApi = new HouseOfTickets\PartnerPlatform\Api\ProductsApi(
     // Use the default http client created by the API
     null,
     $config
 );
 
-function fetchMarketplaceCategory(Emesa\PartnerPlatform\Api\DictionaryApi $dictionaryApi)
+function fetchMarketplaceCategory(HouseOfTickets\PartnerPlatform\Api\DictionaryApi $dictionaryApi)
 {
     $limit = 20; // int | Maximum number of entities to return
     $offset = 0; // int | Skip first N items
@@ -113,16 +113,16 @@ function fetchMarketplaceCategory(Emesa\PartnerPlatform\Api\DictionaryApi $dicti
     throw new \RuntimeException('Failed to find a category ID');
 }
 
-function createProduct(Emesa\PartnerPlatform\Api\ProductsApi $productsApi, $supplierProductId, $marketCategoryId)
+function createProduct(HouseOfTickets\PartnerPlatform\Api\ProductsApi $productsApi, $supplierProductId, $marketCategoryId)
 {
     try {
-        $putProductRequest = new Emesa\PartnerPlatform\Model\PutProductRequest();
+        $putProductRequest = new HouseOfTickets\PartnerPlatform\Model\PutProductRequest();
         $putProductRequest->setEan('1111111111116');
         $putProductRequest->setRetailPriceInCents(2599);
         $putProductRequest->setMarketCategoryId($marketCategoryId);
         $putProductRequest->setMainImageUrl('https://via.placeholder.com/500');
 
-        $nlNlContent = new Emesa\PartnerPlatform\Model\ProductContentDto();
+        $nlNlContent = new HouseOfTickets\PartnerPlatform\Model\ProductContentDto();
         $nlNlContent->setName('Test product');
         $nlNlContent->setWhatIsToBeSold([
             'Draadloze koptelefoon van Hyundai Electronics (modelnummer: HHA32101)',
@@ -135,7 +135,7 @@ function createProduct(Emesa\PartnerPlatform\Api\ProductsApi $productsApi, $supp
             'Snel opladen: 1 uur luisteren na slechts 10 minuten opladen',
         ]);
 
-        $translations = new Emesa\PartnerPlatform\Model\ProductContentTranslationsDto();
+        $translations = new HouseOfTickets\PartnerPlatform\Model\ProductContentTranslationsDto();
         $translations->setNlNl($nlNlContent);
 
         $putProductRequest->setTranslations($translations);
@@ -147,10 +147,10 @@ function createProduct(Emesa\PartnerPlatform\Api\ProductsApi $productsApi, $supp
     }
 }
 
-function createOffer(Emesa\PartnerPlatform\Api\ProductsApi $productsApi, $supplierProductId)
+function createOffer(HouseOfTickets\PartnerPlatform\Api\ProductsApi $productsApi, $supplierProductId)
 {
-    $shippingClass = Emesa\PartnerPlatform\Model\ProductOfferDto::MARKET_SHIPPING_CLASS_ID_S;
-    $putOfferRequest = new Emesa\PartnerPlatform\Model\ProductOfferDto();
+    $shippingClass = HouseOfTickets\PartnerPlatform\Model\ProductOfferDto::MARKET_SHIPPING_CLASS_ID_S;
+    $putOfferRequest = new HouseOfTickets\PartnerPlatform\Model\ProductOfferDto();
     $putOfferRequest->setTargetPriceInCents(999);
     $putOfferRequest->setStock(15);
     $putOfferRequest->setMarketShippingClassId($shippingClass);

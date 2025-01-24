@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ShippingClassDto Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -57,7 +57,7 @@ class ShippingClassDto implements ModelInterface, ArrayAccess
       */
     protected static $swaggerTypes = [
         'market_shipping_class_id' => 'string',
-'costs_in_cents' => '\Emesa\PartnerPlatform\Model\CountryCostDto'    ];
+'costs_in_cents' => '\HouseOfTickets\PartnerPlatform\Model\CountryCostDto'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -235,7 +235,7 @@ class ShippingClassDto implements ModelInterface, ArrayAccess
     /**
      * Gets costs_in_cents
      *
-     * @return \Emesa\PartnerPlatform\Model\CountryCostDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\CountryCostDto
      */
     public function getCostsInCents()
     {
@@ -245,7 +245,7 @@ class ShippingClassDto implements ModelInterface, ArrayAccess
     /**
      * Sets costs_in_cents
      *
-     * @param \Emesa\PartnerPlatform\Model\CountryCostDto $costs_in_cents costs_in_cents
+     * @param \HouseOfTickets\PartnerPlatform\Model\CountryCostDto $costs_in_cents costs_in_cents
      *
      * @return $this
      */

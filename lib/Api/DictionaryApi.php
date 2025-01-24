@@ -4,7 +4,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Api;
+namespace HouseOfTickets\PartnerPlatform\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -33,16 +33,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use Emesa\PartnerPlatform\ApiException;
-use Emesa\PartnerPlatform\Configuration;
-use Emesa\PartnerPlatform\HeaderSelector;
-use Emesa\PartnerPlatform\ObjectSerializer;
+use HouseOfTickets\PartnerPlatform\ApiException;
+use HouseOfTickets\PartnerPlatform\Configuration;
+use HouseOfTickets\PartnerPlatform\HeaderSelector;
+use HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * DictionaryApi Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -92,9 +92,9 @@ class DictionaryApi
      * @param  int $limit Maximum number of entities to return (optional, default to 10000)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\CategoryList
+     * @return \HouseOfTickets\PartnerPlatform\Model\CategoryList
      */
     public function listCategories($limit = '10000', $offset = '0')
     {
@@ -108,13 +108,13 @@ class DictionaryApi
      * @param  int $limit Maximum number of entities to return (optional, default to 10000)
      * @param  int $offset Skip first N items (optional, default to 0)
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\CategoryList, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\CategoryList, HTTP status code, HTTP response headers (array of strings)
      */
     public function listCategoriesWithHttpInfo($limit = '10000', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\CategoryList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\CategoryList';
         $request = $this->listCategoriesRequest($limit, $offset);
 
         try {
@@ -166,7 +166,7 @@ class DictionaryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\CategoryList',
+                        '\HouseOfTickets\PartnerPlatform\Model\CategoryList',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -174,7 +174,7 @@ class DictionaryApi
                 case 422:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ValidationError',
+                        '\HouseOfTickets\PartnerPlatform\Model\ValidationError',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -218,7 +218,7 @@ class DictionaryApi
      */
     public function listCategoriesAsyncWithHttpInfo($limit = '10000', $offset = '0')
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\CategoryList';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\CategoryList';
         $request = $this->listCategoriesRequest($limit, $offset);
 
         return $this->client
@@ -363,9 +363,9 @@ class DictionaryApi
      * Operation listShippingClasses
      *
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Emesa\PartnerPlatform\Model\ShippingClassDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ShippingClassDto[]
      */
     public function listShippingClasses()
     {
@@ -377,13 +377,13 @@ class DictionaryApi
      * Operation listShippingClassesWithHttpInfo
      *
      *
-     * @throws \Emesa\PartnerPlatform\ApiException on non-2xx response
+     * @throws \HouseOfTickets\PartnerPlatform\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Emesa\PartnerPlatform\Model\ShippingClassDto[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \HouseOfTickets\PartnerPlatform\Model\ShippingClassDto[], HTTP status code, HTTP response headers (array of strings)
      */
     public function listShippingClassesWithHttpInfo()
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ShippingClassDto[]';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ShippingClassDto[]';
         $request = $this->listShippingClassesRequest();
 
         try {
@@ -435,7 +435,7 @@ class DictionaryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Emesa\PartnerPlatform\Model\ShippingClassDto[]',
+                        '\HouseOfTickets\PartnerPlatform\Model\ShippingClassDto[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -475,7 +475,7 @@ class DictionaryApi
      */
     public function listShippingClassesAsyncWithHttpInfo()
     {
-        $returnType = '\Emesa\PartnerPlatform\Model\ShippingClassDto[]';
+        $returnType = '\HouseOfTickets\PartnerPlatform\Model\ShippingClassDto[]';
         $request = $this->listShippingClassesRequest();
 
         return $this->client

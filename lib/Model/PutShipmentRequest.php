@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * PutShipmentRequest Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -59,7 +59,7 @@ class PutShipmentRequest implements ModelInterface, ArrayAccess
         'track_trace_url' => 'string',
 'track_trace_number' => 'string',
 'method' => 'string',
-'lines' => '\Emesa\PartnerPlatform\Model\ShipmentLineDto[]'    ];
+'lines' => '\HouseOfTickets\PartnerPlatform\Model\ShipmentLineDto[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -295,7 +295,7 @@ class PutShipmentRequest implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Emesa\PartnerPlatform\Model\ShipmentLineDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ShipmentLineDto[]
      */
     public function getLines()
     {
@@ -305,7 +305,7 @@ class PutShipmentRequest implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Emesa\PartnerPlatform\Model\ShipmentLineDto[] $lines lines
+     * @param \HouseOfTickets\PartnerPlatform\Model\ShipmentLineDto[] $lines lines
      *
      * @return $this
      */

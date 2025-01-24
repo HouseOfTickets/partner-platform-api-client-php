@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+namespace HouseOfTickets\PartnerPlatform\Model;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ReturnAnnouncementsList Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class ReturnAnnouncementsList extends OffsetPaginatedResponseDto
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Emesa\PartnerPlatform\Model\ReturnAnnouncementDto[]'    ];
+        'data' => '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class ReturnAnnouncementsList extends OffsetPaginatedResponseDto
     /**
      * Gets data
      *
-     * @return \Emesa\PartnerPlatform\Model\ReturnAnnouncementDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto[]
      */
     public function getData()
     {
@@ -203,7 +203,7 @@ class ReturnAnnouncementsList extends OffsetPaginatedResponseDto
     /**
      * Sets data
      *
-     * @param \Emesa\PartnerPlatform\Model\ReturnAnnouncementDto[] $data data
+     * @param \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementDto[] $data data
      *
      * @return $this
      */

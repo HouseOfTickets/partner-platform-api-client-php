@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ReturnAnnouncementDto Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -62,7 +62,7 @@ class ReturnAnnouncementDto implements ModelInterface, ArrayAccess
 'return_reason' => 'string',
 'customer_comment' => 'string',
 'created_at' => '\DateTime',
-'lines' => '\Emesa\PartnerPlatform\Model\ReturnAnnouncementLineDto[]'    ];
+'lines' => '\HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementLineDto[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -433,7 +433,7 @@ self::RETURN_REASON_RETURNED_BY_CARRIER,        ];
     /**
      * Gets lines
      *
-     * @return \Emesa\PartnerPlatform\Model\ReturnAnnouncementLineDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementLineDto[]
      */
     public function getLines()
     {
@@ -443,7 +443,7 @@ self::RETURN_REASON_RETURNED_BY_CARRIER,        ];
     /**
      * Sets lines
      *
-     * @param \Emesa\PartnerPlatform\Model\ReturnAnnouncementLineDto[] $lines lines
+     * @param \HouseOfTickets\PartnerPlatform\Model\ReturnAnnouncementLineDto[] $lines lines
      *
      * @return $this
      */

@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * OrderDto Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -60,9 +60,9 @@ class OrderDto implements ModelInterface, ArrayAccess
 'total_shipping_costs_incl_vat_in_cents' => 'int',
 'customer_email' => 'string',
 'customer_phone_number' => 'string',
-'address' => '\Emesa\PartnerPlatform\Model\AddressDto',
+'address' => '\HouseOfTickets\PartnerPlatform\Model\AddressDto',
 'delivery_instructions' => 'string',
-'lines' => '\Emesa\PartnerPlatform\Model\OrderLineDto[]',
+'lines' => '\HouseOfTickets\PartnerPlatform\Model\OrderLineDto[]',
 'order_date_time' => '\DateTime'    ];
 
     /**
@@ -352,7 +352,7 @@ class OrderDto implements ModelInterface, ArrayAccess
     /**
      * Gets address
      *
-     * @return \Emesa\PartnerPlatform\Model\AddressDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\AddressDto
      */
     public function getAddress()
     {
@@ -362,7 +362,7 @@ class OrderDto implements ModelInterface, ArrayAccess
     /**
      * Sets address
      *
-     * @param \Emesa\PartnerPlatform\Model\AddressDto $address address
+     * @param \HouseOfTickets\PartnerPlatform\Model\AddressDto $address address
      *
      * @return $this
      */
@@ -400,7 +400,7 @@ class OrderDto implements ModelInterface, ArrayAccess
     /**
      * Gets lines
      *
-     * @return \Emesa\PartnerPlatform\Model\OrderLineDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\OrderLineDto[]
      */
     public function getLines()
     {
@@ -410,7 +410,7 @@ class OrderDto implements ModelInterface, ArrayAccess
     /**
      * Sets lines
      *
-     * @param \Emesa\PartnerPlatform\Model\OrderLineDto[] $lines lines
+     * @param \HouseOfTickets\PartnerPlatform\Model\OrderLineDto[] $lines lines
      *
      * @return $this
      */

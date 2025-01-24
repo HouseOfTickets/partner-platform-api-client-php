@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+namespace HouseOfTickets\PartnerPlatform\Model;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * WebhookList Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class WebhookList extends OffsetPaginatedResponseDto
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Emesa\PartnerPlatform\Model\WebhookDto[]'    ];
+        'data' => '\HouseOfTickets\PartnerPlatform\Model\WebhookDto[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class WebhookList extends OffsetPaginatedResponseDto
     /**
      * Gets data
      *
-     * @return \Emesa\PartnerPlatform\Model\WebhookDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\WebhookDto[]
      */
     public function getData()
     {
@@ -203,7 +203,7 @@ class WebhookList extends OffsetPaginatedResponseDto
     /**
      * Sets data
      *
-     * @param \Emesa\PartnerPlatform\Model\WebhookDto[] $data data
+     * @param \HouseOfTickets\PartnerPlatform\Model\WebhookDto[] $data data
      *
      * @return $this
      */

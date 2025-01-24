@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,14 +26,14 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+namespace HouseOfTickets\PartnerPlatform\Model;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ProductList Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -54,7 +54,7 @@ class ProductList extends OffsetPaginatedResponseDto
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'data' => '\Emesa\PartnerPlatform\Model\ProductDto[]'    ];
+        'data' => '\HouseOfTickets\PartnerPlatform\Model\ProductDto[]'    ];
 
     /**
       * Array of property to format mappings. Used for (de)serialization
@@ -193,7 +193,7 @@ class ProductList extends OffsetPaginatedResponseDto
     /**
      * Gets data
      *
-     * @return \Emesa\PartnerPlatform\Model\ProductDto[]
+     * @return \HouseOfTickets\PartnerPlatform\Model\ProductDto[]
      */
     public function getData()
     {
@@ -203,7 +203,7 @@ class ProductList extends OffsetPaginatedResponseDto
     /**
      * Sets data
      *
-     * @param \Emesa\PartnerPlatform\Model\ProductDto[] $data data
+     * @param \HouseOfTickets\PartnerPlatform\Model\ProductDto[] $data data
      *
      * @return $this
      */

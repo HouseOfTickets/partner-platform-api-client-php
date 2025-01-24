@@ -5,7 +5,7 @@
  * PHP version 5
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace Emesa\PartnerPlatform\Model;
+namespace HouseOfTickets\PartnerPlatform\Model;
 
 use \ArrayAccess;
-use \Emesa\PartnerPlatform\ObjectSerializer;
+use \HouseOfTickets\PartnerPlatform\ObjectSerializer;
 
 /**
  * ProductContentTranslationsDto Class Doc Comment
  *
  * @category Class
- * @package  Emesa\PartnerPlatform
+ * @package  HouseOfTickets\PartnerPlatform
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
@@ -56,7 +56,7 @@ class ProductContentTranslationsDto implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $swaggerTypes = [
-        'nl_nl' => '\Emesa\PartnerPlatform\Model\ProductContentDto',
+        'nl_nl' => '\HouseOfTickets\PartnerPlatform\Model\ProductContentDto',
 'nl_be' => 'OneOfProductContentTranslationsDtoNlBe',
 'fr_be' => 'OneOfProductContentTranslationsDtoFrBe',
 'de_de' => 'OneOfProductContentTranslationsDtoDeDe'    ];
@@ -220,7 +220,7 @@ class ProductContentTranslationsDto implements ModelInterface, ArrayAccess
     /**
      * Gets nl_nl
      *
-     * @return \Emesa\PartnerPlatform\Model\ProductContentDto
+     * @return \HouseOfTickets\PartnerPlatform\Model\ProductContentDto
      */
     public function getNlNl()
     {
@@ -230,7 +230,7 @@ class ProductContentTranslationsDto implements ModelInterface, ArrayAccess
     /**
      * Sets nl_nl
      *
-     * @param \Emesa\PartnerPlatform\Model\ProductContentDto $nl_nl nl_nl
+     * @param \HouseOfTickets\PartnerPlatform\Model\ProductContentDto $nl_nl nl_nl
      *
      * @return $this
      */
