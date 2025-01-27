@@ -1,9 +1,14 @@
 name: Generate client library when needed
+
 on:
   workflow_dispatch:
   schedule:
     # Runs "At 09:00 on every day-of-week from Sunday through Friday." (see https://crontab.guru)
     - cron: '0 9 * * 0-5'
+
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Generate API client
